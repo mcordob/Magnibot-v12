@@ -72,6 +72,9 @@ let usuario = message.author
     var blush = [`https://cdn.discordapp.com/attachments/399448944889036801/757762337901117510/54f00ca9a79d3a643207cf1298300e39.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/747839179970576434/b022e321-88bb-4f9d-8b5a-672e337f442a.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/755761262666842112/giphy_1.gif`, `https://i.imgur.com/4Bhtipt.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/803565255560921098/8a3016af26fb1f4c26f32ec71590792d.gif`];
     var aleatorioN = Math.floor(Math.random()*(blush.length));
 
+    var claps =[`https://cdn.discordapp.com/attachments/399448944889036801/596162021117001739/tenor_9.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/576925349938593792/unnamed_16.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/706905968134455416/0aaf63c31a78f06498c342d5e6ad4a30.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/596162020538318859/ClumsyExcellentLeveret-size_restricted.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/576925348655005717/unnamed_14.gif`];
+    var aleatorioO = Math.floor(Math.random()*(claps.length));
+
 //___comandos personalizados___________________________________
 if(command === "blaz"){
     const Embed = new Discord.MessageEmbed()
@@ -173,6 +176,12 @@ if(command === "hola"){
     .setImage(blush[aleatorioN]);
     message.channel.send(Embed);
 
+} else if (command === "claps"){
+    const Embed = new Discord.MessageEmbed()
+    .setTitle(`${message.author.username} aplaude!`)
+    .setImage(claps[aleatorioO]);
+    message.channel.send(Embed);
+
 }
 
 
@@ -202,7 +211,7 @@ if(command === "hola"){
      m!avatar 
 
      **Comandos de reaccion**
-     m!hola m!adios m!cry m!bored m!boom m!jpose m!angry m!banghead m!blush `)
+     m!hola m!adios m!cry m!bored m!boom m!jpose m!angry m!banghead m!blush m!claps `)
     message.channel.send(Embed);
 }
 
