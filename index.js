@@ -6,7 +6,7 @@ const config = require ("./config.json");
 
 client.on("ready", () => {
     console.log(`${client.user.username} Estoy listo amor`);
-    client.user.setActivity(" | ZaRk es joto | m!help |")
+    client.user.setActivity(" | m!help |")
 });
 
 client.login('ODE3MTIzMzk0MzUyNzA5Njcz.YEE7dg.y2ca3neFoCass2LfQq6DTLKG02A');
@@ -211,7 +211,7 @@ if(command === "hola"){
      m!avatar 
 
      **Comandos de reaccion**
-     m!hola m!adios m!cry m!bored m!boom m!jpose m!angry m!banghead m!blush m!claps `)
+     m!hola m!adios m!cry m!bored m!boom m!jpose m!angry m!banghead m!blush m!claps m!boom  `)
     message.channel.send(Embed);
 }
 
