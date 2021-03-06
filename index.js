@@ -317,9 +317,9 @@ if(command === 'say'){
     .addField('Creado el', server.joinedAt.toDateString(), true)
     .addField('Dueño del Servidor', server.owner.user.tag+' ('+server.owner.user.id +')', true)
     .addField('Miembros', server.memberCount, true)
-    .addField('Roles', server.roles.cache.size, true)
+    .addField('Roles', server.roles.cache.size, true +'Usa m!rolelist para ver mas informacion')
     .setColor('#785d7e')
-    .setFooter('Pedido por:'+message.member.displayName, message.author.avatarURL());   
+    .setFooter('Pedido por:' +message.member.displayName, message.author.avatarURL());   
     message.channel.send(embed);
     }
 
