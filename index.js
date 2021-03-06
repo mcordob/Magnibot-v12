@@ -317,7 +317,7 @@ if(command === 'say'){
     .addField('Creado el', server.joinedAt.toDateString(), true)
     .addField('Dueño del Servidor', server.owner.user.tag+' ('+server.owner.user.id +')', true)
     .addField('Miembros', server.memberCount, true)
-    .addField('Roles', server.roles.cache.size, true +'Usa m!rolelist para ver mas informacion')
+    .addField('Roles', server.roles.cache.size, true)
     .setColor('#785d7e')
     .setFooter('Pedido por:' +message.member.displayName, message.author.avatarURL());   
     message.channel.send(embed);
@@ -341,10 +341,12 @@ if(command === 'say'){
            var server = message.guild;
          const embed = new Discord.MessageEmbed()
          .setTitle('Lista de roles de '+ message.guild.name)
+         .addField('Roles:', server.roles.cache.size, true)
          .setColor('RANDOM') //Definir el color del embed
          .setThumbnail(server.iconURL()) //Icono del Servidor
          .setAuthor(server.name, server.iconURL()) 
-          .setDescription(server.roles.cache.map(roles => roles.toString()).join("-"))   
+          .setDescription(server.roles.cache.map(roles => roles.toString()).join("-"))
+          .setFooter('Pedido por:' +message.member.displayName, message.author.avatarURL());  
           message.channel.send({embed});
     }
 
