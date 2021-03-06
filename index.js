@@ -9,7 +9,7 @@ client.on("ready", () => {
     client.user.setActivity(" | m!help |")
 });
 
-client.login('ODE3MTIzMzk0MzUyNzA5Njcz.YEE7dg.y2ca3neFoCass2LfQq6DTLKG02A');
+client.login('ODE3MTIzMzk0MzUyNzA5Njcz.YEE7dg.s-SFXUVDo2RVhbId2Y1C1AlYFW0');
 
 client.on("message", async message => {
    
