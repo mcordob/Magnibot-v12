@@ -92,21 +92,27 @@ let usuario = message.author
 
 //___comandos personalizados___________________________________
 if(command === "blaz"){
+    message.delete();
     const Embed = new Discord.MessageEmbed()
     .setTitle(`Blaz joputa`)
-    .setImage(`https://cdn.discordapp.com/attachments/399448944889036801/749952024275058728/ezgif.com-video-to-gif_1.gif`);
+    .setImage(`https://cdn.discordapp.com/attachments/399448944889036801/749952024275058728/ezgif.com-video-to-gif_1.gif`)
+    .setFooter(`Comando secreto 1/3`);
     message.channel.send(Embed);
 
 } if(command === "darling"){
+    message.delete();
     const Embed = new Discord.MessageEmbed()
     .setTitle(`Darling la pervertida`)
-    .setImage(`https://cdn.discordapp.com/attachments/763154378634690602/817241749448556545/image0.gif`);
+    .setImage(`https://cdn.discordapp.com/attachments/763154378634690602/817241749448556545/image0.gif`)
+    .setFooter(`Comando secreto 2/3`);
     message.channel.send(Embed);
 
 } if (command== "nobios"){
+    message.delete();
     const Embed = new Discord.MessageEmbed()
     .setTitle(`Que vivan los nobiosss :D`)
-    .setImage(`https://media.tenor.com/images/64343801a6885bdb952ad339606fa014/tenor.gif`);
+    .setImage(`https://media.tenor.com/images/64343801a6885bdb952ad339606fa014/tenor.gif`)
+    .setFooter(`Comando secreto 3/3`);
     message.channel.send(Embed);
 }
 //COMANDOS DE INTERRACCION_______________________________________________________________________________________________________________________________________________________________
