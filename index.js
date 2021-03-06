@@ -318,7 +318,8 @@ if(command === 'say'){
     .addField('Dueño del Servidor', server.owner.user.tag+' ('+server.owner.user.id +')', true)
     .addField('Miembros', server.memberCount, true)
     .addField('Roles', server.roles.cache.size, true)
-    .setColor('#785d7e')    
+    .setColor('#785d7e')
+    .setFooter('Pedido por:'+message.member.displayName, message.author.avatarURL());   
     message.channel.send(embed);
     }
 
