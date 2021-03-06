@@ -209,19 +209,19 @@ if(command === "hola"){
     .setImage(confused[aleatorioQ]);
     message.channel.send(Embed);
 
-} else if (command === "dab "){
+} else if (command === "dab"){
     const Embed = new Discord.MessageEmbed()
     .setTitle(`${message.author.username} hace un dab en pleno 2021`)
     .setImage(dab[aleatorioR]);
     message.channel.send(Embed);
 
-}  else if (command === "discouraged "){
+}  else if (command === "discouraged"){
     const Embed = new Discord.MessageEmbed()
     .setTitle(`${message.author.username} se siente realmente deprimido`)
     .setImage(discouraged[aleatorioS]);
     message.channel.send(Embed);
     
-}  else if (command === "disgust "){
+}  else if (command === "disgust"){
     const Embed = new Discord.MessageEmbed()
     .setTitle(`${message.author.username} no le parece agradable`)
     .setImage(disgust[aleatorioT]);
