@@ -78,6 +78,18 @@ let usuario = message.author
     var bored = [`https://cdn.discordapp.com/attachments/399448944889036801/689132236272042135/72e83f145c2cf9a405134cd314c134828e17e90b_hq.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/659843482671775754/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/803560192188219422/tumblr_5325a85915695e734bb8e51a681027eb_f7e57429_400.gif`, `https://i.imgur.com/EQ7waOU.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/782331799233757204/Bored.gif`];
     var aleatorioP = Math.floor(Math.random()*(bored.length));
 
+    var confused = [`https://i.imgur.com/zeQAtaF.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/784389055856246825/2bb4fd82311efe3e5c8f4b8790039c91.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/737787313446191184/e.e.gif`, `https://i.imgur.com/k5Sti6v.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/756917853709533235/f4cf2b60-8ef8-43d9-b492-c0714e19d194.gif`];
+    var aleatorioQ = Math.floor(Math.random()*(blush.length));
+
+    var dab = [`https://cdn.discordapp.com/attachments/399448944889036801/664507325452779524/tenor.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/664507838617354280/58cba541-babd-4953-bd47-ec466ca0a453.jpg`, `https://cdn.discordapp.com/attachments/399448944889036801/664507355022753792/1494582419_megumin_dabbing.jpg`, `https://cdn.discordapp.com/attachments/399448944889036801/555409463000170516/Rikka_Dab.jpeg`, `https://i.imgur.com/3IF6IBX.gif`];
+    var aleatorioR = Math.floor(Math.random()*(dab.length));
+
+    var discouraged = [`https://cdn.discordapp.com/attachments/399448944889036801/803707156499136582/tumblr_nq8knulV1y1s5wiico1_500.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/633334433692385289/95f412c7-8099-43b2-91c8-ad9cd6056da8.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/753367701895774268/ed24a941-cde6-4112-9591-969fbd0eeb70.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/796059036113436722/tumblr_oe8ccinN6J1ub9qlao1_400.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/753564337171595344/7cb4bed3-ef06-46c9-8c2f-9e160355ae89.gif`];
+    var aleatorioS = Math.floor(Math.random()*(discouraged.length));
+
+    var disgust = [`https://i.imgur.com/POtfkCu.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/754303904975421443/18cd23e8-19e1-4e11-bd5f-281907abefd9.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/662974336692649984/c9a1e74aef58cbd5eb2b2bc53c6ed3a8.gif`, `https://media.discordapp.net/attachments/399448944889036801/518918126998519808/tenor_2.gif`, `https://i.imgur.com/taWNBF0.gif`];
+    var aleatorioT = Math.floor(Math.random()*(disgust.length));
+
 //___comandos personalizados___________________________________
 if(command === "blaz"){
     const Embed = new Discord.MessageEmbed()
@@ -190,6 +202,49 @@ if(command === "hola"){
     .setTitle(`${message.author.username} se aburre demasiado... Casi para dormirse pero también le aburre...`)
     .setImage(bored[aleatorioP]);
     message.channel.send(Embed);
+
+} else if (command === "confused"){
+    const Embed = new Discord.MessageEmbed()
+    .setTitle(`${message.author.username} no entiende absolutamente nada.`)
+    .setImage(confused[aleatorioQ]);
+    message.channel.send(Embed);
+
+} else if (command === "dab "){
+    const Embed = new Discord.MessageEmbed()
+    .setTitle(`${message.author.username} hace un dab en pleno 2021`)
+    .setImage(dab[aleatorioR]);
+    message.channel.send(Embed);
+
+}  else if (command === "discouraged "){
+    const Embed = new Discord.MessageEmbed()
+    .setTitle(`${message.author.username} se siente realmente deprimido`)
+    .setImage(discouraged[aleatorioS]);
+    message.channel.send(Embed);
+    
+}  else if (command === "disgust "){
+    const Embed = new Discord.MessageEmbed()
+    .setTitle(`${message.author.username} no le parece agradable`)
+    .setImage(disgust[aleatorioT]);
+    message.channel.send(Embed);
+    
+}  else if (command === ""){
+    const Embed = new Discord.MessageEmbed()
+    .setTitle(``)
+    .setImage([]);
+    message.channel.send(Embed);
+    
+}  else if (command === ""){
+    const Embed = new Discord.MessageEmbed()
+    .setTitle(``)
+    .setImage([]);
+    message.channel.send(Embed);
+    
+}  else if (command === ""){
+    const Embed = new Discord.MessageEmbed()
+    .setTitle(``)
+    .setImage([]);
+    message.channel.send(Embed);
+    
 }
 
 
@@ -219,7 +274,7 @@ if(command === "hola"){
      m!avatar 
 
      **Comandos de reaccion**
-     m!hola m!adios m!cry m!bored m!boom m!jpose m!angry m!banghead m!blush m!claps m!boom  `)
+     m!hola m!adios m!cry m!bored m!boom m!jpose m!angry m!banghead m!blush m!claps m!boom m!dab m!discouraged m!disgust   `)
     message.channel.send(Embed);
 }
 
