@@ -352,5 +352,50 @@ if(command === 'say'){
     }
 
 
+
+    const Discord = require('discord.js');
+const chance = require('chance').Chance();
+
+module.exports = async (client, message, args) => {
+  
+    let dominios = ["outlook.com","gmail.com","hotmail.com", "yahoo.com"]
+    //Si quieren poner mas dominios no importa si sean verdaderos
+    //Si quieren que sea solo un dominio mas abajo lo explicare
+
+    let usuario = message.mentions.users.first()
+    let autor = message.author
+
+    var correo = dominios[Math.floor(Math.random() * dominios.length)];
+
+    if (command === 'hack'(!usuario)){
+      message.delete({ timeout: 5000 })
+      message.channel.send(`No te puedes autohackear`).then( m => {
+        m.delete({ timeout: 5000 })
+      });
+      return;
+    }
+    //En mi caso hago que elimine el mensaje que pone el usuario y el mensaje en un timeout de 5 segundos.
+
+    let ip = chance.ip();
+    let numero = chance.phone({ country: 'us', mobile: true });
+    let correo = chance.email({domain: correo })
+  /*
+        En caso en que quieran solo un dominio le cambiamos esto
+        chance.email({domain: "(Dominio que quieran)Interrogacion.com" }
+*/
+    let contraseña =  chance.word({ length: 8 });
+    //Definimos las variables y las ponemos en un Embed
+    //Pueden modificar el Embed a su gusto
+    const hackeo = new Discord.MessageEmbed() 
+        .setDescription(`${autor} a hackeado a ${usuario}`)
+        .addField("Ip: ",ip)
+        .addField("Numero: ",numero)
+        .addField("Correo: ",correo)
+        .addField("Contraseña: ",contraseña)
+        .setImage(usuario.displayAvatarURL({ size: 2048 }))
+        .setColor(`RED`)
+        message.channel.send(hackeo);
+}
+
 });
 
