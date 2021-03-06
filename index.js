@@ -279,11 +279,12 @@ if(command === "hola"){
     **Comandos de Configuración**
 
     **Comandos Informativos**
+    m!serverinfo m!rolelist
 
     **Comandos NSFW**
 
     **Comandos Útiles**
-     m!avatar 
+     m!avatar m!say
 
      **Comandos de reaccion**
      m!hola m!adios m!cry m!bored m!boom m!jpose m!angry m!banghead m!blush m!claps m!boom m!dab m!discouraged m!disgust   `)
