@@ -102,6 +102,12 @@ if(command === "blaz"){
     .setTitle(`Darling la pervertida`)
     .setImage(`https://cdn.discordapp.com/attachments/763154378634690602/817241749448556545/image0.gif`);
     message.channel.send(Embed);
+
+} if (command== "nobios"){
+    const Embed = new Discord.MessageEmbed()
+    .setTitle(`Que vivan los nobiosss :D`)
+    .setImage(`https://media.tenor.com/images/64343801a6885bdb952ad339606fa014/tenor.gif`);
+    message.channel.send(Embed);
 }
 //COMANDOS DE INTERRACCION_______________________________________________________________________________________________________________________________________________________________
 
