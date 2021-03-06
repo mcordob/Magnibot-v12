@@ -72,8 +72,11 @@ let usuario = message.author
     var blush = [`https://cdn.discordapp.com/attachments/399448944889036801/757762337901117510/54f00ca9a79d3a643207cf1298300e39.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/747839179970576434/b022e321-88bb-4f9d-8b5a-672e337f442a.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/755761262666842112/giphy_1.gif`, `https://i.imgur.com/4Bhtipt.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/803565255560921098/8a3016af26fb1f4c26f32ec71590792d.gif`];
     var aleatorioN = Math.floor(Math.random()*(blush.length));
 
-    var claps =[`https://cdn.discordapp.com/attachments/399448944889036801/596162021117001739/tenor_9.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/576925349938593792/unnamed_16.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/706905968134455416/0aaf63c31a78f06498c342d5e6ad4a30.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/596162020538318859/ClumsyExcellentLeveret-size_restricted.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/576925348655005717/unnamed_14.gif`];
+    var claps = [`https://cdn.discordapp.com/attachments/399448944889036801/596162021117001739/tenor_9.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/576925349938593792/unnamed_16.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/706905968134455416/0aaf63c31a78f06498c342d5e6ad4a30.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/596162020538318859/ClumsyExcellentLeveret-size_restricted.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/576925348655005717/unnamed_14.gif`];
     var aleatorioO = Math.floor(Math.random()*(claps.length));
+
+    var bored = [`https://cdn.discordapp.com/attachments/399448944889036801/689132236272042135/72e83f145c2cf9a405134cd314c134828e17e90b_hq.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/659843482671775754/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/803560192188219422/tumblr_5325a85915695e734bb8e51a681027eb_f7e57429_400.gif`, `https://i.imgur.com/EQ7waOU.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/782331799233757204/Bored.gif`];
+    var aleatorioP = Math.floor(Math.random()*(bored.length));
 
 //___comandos personalizados___________________________________
 if(command === "blaz"){
@@ -182,6 +185,11 @@ if(command === "hola"){
     .setImage(claps[aleatorioO]);
     message.channel.send(Embed);
 
+} else if (command === "bored"){
+    const Embed = new Discord.MessageEmbed()
+    .setTitle(`${message.author.username} se aburre demasiado... Casi para dormirse pero también le aburre...`)
+    .setImage(bored[aleatorioP]);
+    message.channel.send(Embed);
 }
 
 
