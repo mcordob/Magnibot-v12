@@ -26,7 +26,7 @@ client.on("message", async message => {
 
 
     
-// GIF ___________________________________________________________________________________________________________________________________________________________________________
+// GIF ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
     
 let usuario = message.author
     let mencion = message.mentions.members.first()
@@ -89,6 +89,15 @@ let usuario = message.author
 
     var disgust = [`https://i.imgur.com/POtfkCu.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/754303904975421443/18cd23e8-19e1-4e11-bd5f-281907abefd9.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/662974336692649984/c9a1e74aef58cbd5eb2b2bc53c6ed3a8.gif`, `https://media.discordapp.net/attachments/399448944889036801/518918126998519808/tenor_2.gif`, `https://i.imgur.com/taWNBF0.gif`];
     var aleatorioT = Math.floor(Math.random()*(disgust.length));
+
+    var facepalm = [`https://cdn.discordapp.com/attachments/399448944889036801/722452395539431454/desconocido.gif`, `https://66.media.tumblr.com/adbe0134565db0b342db98db3aa0f662/tumblr_o0jiegjcTD1uqrfrco1_500.gif`, `https://cdn.discordapp.com/attachments/393558002726338561/464506064088465418/unnamed_5.gif`, `https://cdn.discordapp.com/attachments/393558002726338561/464506062284914699/unnamed_6.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/741937665644953680/tenor_2.gif`];
+    var aleatorioY = Math.floor(Math.random()*(facepalm.length));
+
+    var fbi = [`https://cdn.discordapp.com/attachments/399448944889036801/633404185613959199/93b37b5aee9085d904593fc579e80765.gif`, `https://cdn.discordapp.com/attachments/381330993233002496/541869979667005443/unnamed_3.gif`, `https://cdn.discordapp.com/attachments/381330993233002496/541870158445281280/unnamed_8.gif`, `https://cdn.discordapp.com/attachments/451514391951704074/541863738626801676/tenor.gif`, `https://cdn.discordapp.com/attachments/451514391951704074/541863510867443712/1433372630_3pbudSZ.gif`];
+    var aleatorioX = Math.floor(Math.random()*(fbi.length));
+
+    var game = [`https://cdn.discordapp.com/attachments/694005107083313252/701490804559970345/15.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/748506277574869062/6039692c-d255-4f2f-b1ec-5b0005f3d70d.gif`, `https://i.imgur.com/0DVtRU9.gif`, `https://cdn.discordapp.com/attachments/694005107083313252/701490699530535376/1.gif`, `https://cdn.discordapp.com/attachments/399448944889036801/746414741114716260/ff1d6128-fa7d-4b56-8694-6b8a62614980.gif`];
+    var aleatorioZ = Math.floor(Math.random()*(game.length));
 
 //___comandos personalizados___________________________________
 if(command === "blaz"){
@@ -239,22 +248,22 @@ if(command === "hola"){
     .setImage(disgust[aleatorioT]);
     message.channel.send(Embed);
     
-}  else if (command === ""){
+}  else if (command === "facepalm"){
     const Embed = new Discord.MessageEmbed()
-    .setTitle(``)
-    .setImage([]);
+    .setTitle(`${message.author.username} se ha decepcionado`)
+    .setImage(facepalm [aleatorioY]);
     message.channel.send(Embed);
     
-}  else if (command === ""){
+}  else if (command === "fbi"){
     const Embed = new Discord.MessageEmbed()
-    .setTitle(``)
-    .setImage([]);
+    .setTitle(`La ONU está aquí, ¡escapen!`)
+    .setImage(fbi [aleatorioX]);
     message.channel.send(Embed);
     
-}  else if (command === ""){
+}  else if (command === "game"){
     const Embed = new Discord.MessageEmbed()
-    .setTitle(``)
-    .setImage([]);
+    .setTitle(`${message.author.username} está jugando algo divertido`)
+    .setImage(game [aleatorioZ]);
     message.channel.send(Embed);
     
 }
@@ -262,7 +271,7 @@ if(command === "hola"){
 
 
 
- //Comandos utiles---------------------------------------------------------------------
+ //Comandos utiles------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
  if(command === "help"){
     const Embed = new Discord.MessageEmbed()
@@ -287,7 +296,7 @@ if(command === "hola"){
      m!avatar m!say
 
      **Comandos de reaccion**
-     m!hola m!adios m!cry m!bored m!boom m!jpose m!angry m!banghead m!blush m!claps m!boom m!dab m!discouraged m!disgust   `)
+     m!hola m!adios m!cry m!bored m!boom m!jpose m!angry m!banghead m!blush m!claps m!boom m!dab m!discouraged m!disgust m!facepalm m!fbi   `)
     message.channel.send(Embed);
 }
 
