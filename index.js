@@ -5,11 +5,11 @@ const config = require ("./config.json");
 
 
 client.on("ready", () => {
-    console.log(`${client.user.username} Estoy listo amor`);
+    console.log(`${client.user.username} Estoy listo`);
     client.user.setActivity(" |m!help|")
 });
 
-client.login('ODE3MTIzMzk0MzUyNzA5Njcz.YEE7dg.s-SFXUVDo2RVhbId2Y1C1AlYFW0');
+client.login('');
 
 client.on("message", async message => {
    
